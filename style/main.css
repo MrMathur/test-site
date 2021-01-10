@@ -8,10 +8,10 @@
 
 .navbar {
   z-index: 1;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
   background-color: white;
 }
 
@@ -73,14 +73,14 @@
 /* header */
 
 .header {
-  margin-top: 90px;
+  margin-top: 50px;
   padding-top: 100px;
   padding-bottom: 120px;
 }
 
 .header #header-carousel {
   border-radius: 4px;
-  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.24), 0px 0px 16px rgba(0, 0, 0, 0.12);
+  /* box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.24), 0px 0px 16px rgba(0, 0, 0, 0.12); */
 }
 
 .header .carousel-control {
@@ -253,6 +253,7 @@
 
 .work .project-thumbnail {
   width: 100%;
+  border-radius: 4px;
 }
 
 .work h1 {
@@ -310,7 +311,7 @@
   color: #C90708;
 }
 
-.work .project .project-link {
+.work .project .project-link:hover {
 
   border: 1px solid #C90708;
   box-sizing: border-box;
@@ -331,7 +332,7 @@
 
 }
 
-.work .project .project-link:hover {
+.work .project .project-link {
 
   background: #C90708;
   border-radius: 4px;

@@ -1,4 +1,7 @@
 $(document).ready(() => {
+
+  typeWord("UX Designer", 200);
+
   $('#header-carousel').carousel({
     interval: 5500
   });
