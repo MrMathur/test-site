@@ -4,149 +4,270 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arpit's Portfolio</title>
+  <title>Arpit Mathur's Portfolio</title>
 
-  <!-- CDN -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- JQUERY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+
+  <!-- TYPED JS-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+  <!-- SLICK -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/header.js"></script>
+  <script src="./js/about-slide.js"></script>
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style/main.css">
+  <link rel="stylesheet" href="./style/navbar.css">
+  <link rel="stylesheet" href="./style/header.css">
+  <link rel="stylesheet" href="./style/work.css">
+  <link rel="stylesheet" href="./style/play.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link rel="stylesheet" href="./style/footer.css">
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;400&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style/main.css" />
-  <link rel="stylesheet" href="./style/default.css" />
-
-  <!-- JS -->
-  <script src="js/blink.js"></script>
-  <script src="js/carousel.js"></script>
+  <script src="./js/scroll.js"></script>
 </head>
 
 <body>
   <div class="container">
-    <div class="navbar">
-      <span class="logo">
-        <span id="arpit">ARPIT</span>MATHUR
-      </span>
-      <!-- <span class="links">
-        <a href="#"><span class="active-item">_work</span></a>
-        <a href="./play.html"><span class="inactive-item">play</span></a>
-        <a href="./about.html"><span class="inactive-item">about</span></a>
-        <a target="_blank" href="./resume.pdf"><span class="inactive-item">resume</span></a>
-      </span> -->
+    <div id="nav-container">
+      <div class="container">
+        <div id="navbar">
+          <a id="logo" href="#header">ARPIT<span id="mathur">MATHUR</span></a>
+          <span id="nav-items">
+            <a class="nav-item" href="#work">01 work</a>
+            <a class="nav-item" href="#play">02 play</a>
+            <a class="nav-item" href="#about">03 about</a>
+            <a class="nav-item" href="./RESUME.pdf" target="_blank">04 resume</a>
+          </span>
+        </div>
+      </div>
     </div>
-    <div class="header">
+    <div id="header">
       <div class="row">
         <div class="col-lg-6">
-          <h2>I'm a</h2>
-          <h1>
-            <blink>_</blink><span id="profile-term">UX Designer</span>
-          </h1>
+          <h1>I'M A</h1>
+          <h2 class="parent-type-element">
+            <span class="type-element"></span>
+          </h2>
+          <h2>
+            <span class="mob-element">UX Designer</span>
+          </h2>
           <p>Currently a graduate student pursuing a Masters of Science in <b>Human-Computer Interaction</b> at the
-            <b>Georgia
-              Institute of Technology</b>. Previously, B.Des at IIT Guwahati.</p>
+            <b>Georgia Institute of Technology</b>. Previously, B.Des at IIT Guwahati.</p>
           <p>Looking for UX Design full time opportunities starting May 2021.</p>
-          <div class="button-div">
-            <a class="email-button">contact</a>
-            <a class="resume-button">resume</a>
+          <div id="buttons">
+            <a href="mailto:arpit.mathur@gatech.edu" target="_blank">contact</a>
+            <a href="./RESUME.pdf" target="_blank">resume</a>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div id="header-carousel" class="carousel slide" data-pause="false">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-              <div class="item active" id="1">
-                <img src="./images/carousel-images/1.png" style="width:100%;">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-5">
+          <div id="tv">
+            <div>
+              <div id="image-frame">
+                <img src="./images/carousel_images/8.png" />
+                <img src="./images/carousel_images/1.png" />
+                <img src="./images/carousel_images/3.png" />
+                <img src="./images/carousel_images/2.png" />
+                <img src="./images/carousel_images/5.png" />
+                <img src="./images/carousel_images/4.png" />
+                <img src="./images/carousel_images/6.png" />
+                <img src="./images/carousel_images/7.png" />
               </div>
-
-              <div class="item" id="2">
-                <img src="./images/carousel-images/2.png" style="width:100%;">
-              </div>
-
-              <div class="item" id="3">
-                <img src="./images/carousel-images/3.png" style="width:100%;">
-              </div>
-
-              <div class="item" id="4">
-                <img src="./images/carousel-images/4.png" style="width:100%;">
-              </div>
-
-              <div class="item" id="5">
-                <img src="./images/carousel-images/5.png" style="width:100%;">
-              </div>
-
-              <div class="item" id="6">
-                <img src="./images/carousel-images/6.png" style="width:100%;">
-              </div>
-
-              <div class="item" id="7">
-                <img src="./images/carousel-images/7.png" style="width:100%;">
-              </div>
-
-              <div class="item" id="8">
-                <img src="./images/carousel-images/8.png" style="width:100%;">
-              </div>
+            </div>
+            <br />
+            <div>
+              <div id="control1"></div>
+              <div id="control2"></div>
+              <div id="control2"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="work">
-      <!-- <div class="filter">
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <span class="active-item col-lg-2">_featured</span>
-          <span class="inactive-item col-lg-2">design</span>
-          <span class="inactive-item col-lg-2">research</span>
-          <span class="inactive-item col-lg-2">coding</span>
-          <div class="col-lg-2"></div>
-        </div>
-      </div> -->
-      <div class="row project">
+    <div id="work">
+      <div class="row">
+        <div class="cute-glyph"></div>
+        <h1 class="section-title">ALL WORK</h1>
+        <!-- <div id="filter">
+          <a class="filter-item active-item">01 featured</a>
+          <a class="filter-item">02 design</a>
+          <a class="filter-item">03 research</a>
+          <a class="filter-item">04 coding</a>
+        </div> -->
+      </div>
+      <div class="row left-project">
         <div class="col-lg-5">
-          <img class="project-thumbnail" src="./images/project-thumbnails/Aquarium.png"/>
+          <img class="desk-img" src="./images/project-thumnails/Aquarium.png" />
         </div>
-        <div class="col-lg-7">
-          <h1>Georgia <br /> Aquarium</h1>
-          <div class="tags">User Research, Exhibit Design, Mobile UX</div>
-          <p><span class="p-title">Challenge:</span> Alter the visitors’ perceptions of sharks from ‘fear’ to ‘fascination’ through Georgia Aquarium’s Predator Project.</p>
-          <p><span class="p-title">Solution:</span> Designed an interactive screen exhibit with a mobile-based interface, educating visitors about the role of sharks in the food chain and demystifiyng myths that make them scary.</p>
-          <div class="project-link-div">
-            <a class="project-link">read case study</a>
-          </div>          
+        <div class="col-lg-6">
+          <h2>Georgia Aquarium <br />
+            Predator Exhibit</h2>
+          <div class="tags">
+            <span>Mobile UX</span>
+            <span>Exhibit Design</span>
+            <span>Game Design</span>
+          </div>
+          <br />
+          <img class="mob-img" src="./images/project-thumnails/Aquarium.png" />
+          <p><b>Challenge</b>: Alter the visitors’ perceptions of sharks from ‘fear’ to ‘fascination’ through Georgia
+            Aquarium’s Predator Project. </p>
+          <p><b>Solution</b>: Designed an interactive screen exhibit with a mobile-based interface, educating visitors
+            about
+            the role of sharks in the food chain and demystifiyng myths that make them scary.</p>
+          <div id="buttons">
+            <button>read more</button>
+          </div>
+        </div>
+        <div class="col-lg-1">
+
         </div>
       </div>
-      <div class="row project">
-        <div class="col-lg-7">
-          <h1>Digital Threats <br /> to Democracy</h1>
-          <div class="tags">User Research, Exhibit Design, Mobile UX</div>
-          <p><span class="p-title">Challenge:</span> Alter the visitors’ perceptions of sharks from ‘fear’ to ‘fascination’ through Georgia Aquarium’s Predator Project.</p>
-          <p><span class="p-title">Solution:</span> Designed an interactive screen exhibit with a mobile-based interface, educating visitors about the role of sharks in the food chain and demystifiyng myths that make them scary.</p>
-          <div class="project-link-div">
-            <a class="project-link">read case study</a>
-          </div>          
+      <div class="row right-project">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+          <h2>Digital Threats <br />
+            to Democracy</h2>
+          <div class="tags">
+            <span>Mobile UX</span>
+            <span>Exhibit Design</span>
+            <span>Game Design</span>
+          </div>
+          <br />
+          <img class="mob-img" src="./images/project-thumnails/DT2D.png" />
+          <p><b>Challenge</b>: Alter the visitors’ perceptions of sharks from ‘fear’ to ‘fascination’ through Georgia
+            Aquarium’s Predator Project. </p>
+          <p><b>Solution</b>: Designed an interactive screen exhibit with a mobile-based interface, educating visitors
+            about
+            the role of sharks in the food chain and demystifiyng myths that make them scary.</p>
+          <div id="buttons">
+            <button>read more</button>
+          </div>
         </div>
         <div class="col-lg-5">
-          <img class="project-thumbnail" src="./images/project-thumbnails/DT2D.png"/>
+          <img class="desk-img" src="./images/project-thumnails/DT2D.png" />
         </div>
       </div>
-      <div class="row project">
+      <div class="row left-project">
         <div class="col-lg-5">
-          <img class="project-thumbnail" src="./images/project-thumbnails/quant.png"/>
+          <img class="desk-img" src="./images/project-thumnails/quant.png" />
         </div>
-        <div class="col-lg-7">
-          <h1>Visualizing Concepts <br /> of Quantum Physics</h1>
-          <div class="tags">User Research, Exhibit Design, Mobile UX</div>
-          <p><span class="p-title">Challenge:</span> Alter the visitors’ perceptions of sharks from ‘fear’ to ‘fascination’ through Georgia Aquarium’s Predator Project.</p>
-          <p><span class="p-title">Solution:</span> Designed an interactive screen exhibit with a mobile-based interface, educating visitors about the role of sharks in the food chain and demystifiyng myths that make them scary.</p>
-          <div class="project-link-div">
-            <a class="project-link">read case study</a>
-          </div>          
+        <div class="col-lg-6">
+          <h2>Visualizing <br />
+            Quantum Physics</h2>
+          <div class="tags">
+            <span>Mobile UX</span>
+            <span>Exhibit Design</span>
+            <span>Game Design</span>
+          </div>
+          <img class="mob-img" src="./images/project-thumnails/quant.png" />
+          <p><b>Challenge</b>: Alter the visitors’ perceptions of sharks from ‘fear’ to ‘fascination’ through Georgia
+            Aquarium’s Predator Project. </p>
+          <p><b>Solution</b>: Designed an interactive screen exhibit with a mobile-based interface, educating visitors
+            about
+            the role of sharks in the food chain and demystifiyng myths that make them scary.</p>
+          <div id="buttons">
+            <button>read more</button>
+          </div>
+        </div>
+        <div class="col-lg-1">
+
         </div>
       </div>
+    </div>
+    <div id="play">
+      <div class="row">
+        <div class="cute-glyph"></div>
+        <h1 class="section-title">SOME PLAY</h1>
+      </div>
+      <div class="row play-projects">
+        <div class="col-lg-3">
+          <img src="./images/project-thumnails/Aquarium.png" />
+        </div>
+        <div class="col-lg-3">
+          <img src="./images/project-thumnails/DT2D.png" />
+        </div>
+        <div class="col-lg-3">
+          <img src="./images/project-thumnails/quant.png" />
+        </div>
+        <div class="col-lg-3">
+          <img src="./images/project-thumnails/Aquarium.png" />
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="row">
+        <div class="cute-glyph"></div>
+        <h1 class="section-title">ABOUT ME</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-6" id="about-desc">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem eum at optio nostrum vero esse, omnis
+            rerum cupiditate aut nam pariatur reiciendis dicta molestiae. Illo quasi possimus consequuntur ipsam?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem eum at optio nostrum vero esse, omnis
+            rerum cupiditate aut nam pariatur reiciendis dicta molestiae. Illo quasi possimus consequuntur ipsam?</p>
+          <p>Reach out to me at: <a id="email" target="_blank" href="mailto:arpit.mathur@gatech.edu">arpit.mathur@gatech.edu</a></p>
+        </div>
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-5">
+          <div id="frame">
+            <div id="slick-frame">
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/0.jpg" />
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/1.jpg" />
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/2.jpg" />
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/3.jpg" />
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/4.jpg" />
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/5.jpg" />
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/6.jpg" />
+              <!-- <img src="./images/about-image/drive-download-20210110T113314Z-001/7.jpg" /> -->
+              <img src="./images/about-image/drive-download-20210110T113314Z-001/8.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <span id="icons">
+        <a href="https://www.linkedin.com/in/arpitmathurinfo/" target="_blank"><img
+            src="./images/Social/LinkedIn.svg" />
+        </a>
+        <a href="mailto:arpit.mathur@gatech.edu" target="_blank">
+          <img src="./images/Social/Mail.svg" />
+        </a>
+        <a href="https://medium.com/@arpitmathur19" target="_blank">
+          <img src="./images/Social/Medium.svg" />
+        </a>
+        <a href="https://dribbble.com/arpitmathur19" target="_blank">
+          <img src="./images/Social/Dribbble.svg" />
+        </a>
+      </span>
+      <div id="footnote">
+        Design and Code by Yours Truly </div>
     </div>
   </div>
 </body>

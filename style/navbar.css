@@ -1,0 +1,88 @@
+#navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navbar #nav-items {
+  float: right;
+
+  padding-top: 8px;
+}
+
+#navbar #logo {
+
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: 0.05em;
+
+  color: #C90708;
+}
+
+#navbar #logo:hover {
+  text-decoration: none;
+}
+
+#navbar #logo #mathur {
+  color: #454545;
+}
+
+#navbar .nav-item {
+  margin-left: 30px;
+
+  font-family: 'Fira Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+
+  opacity: 0.4;
+
+}
+
+#navbar .nav-item:hover {
+
+  font-family: Fira Mono;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+
+  opacity: 1;
+
+  text-decoration: none;
+
+}
+
+#nav-container {
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+
+  margin: 0;
+  padding: 0;
+}
+
+#nav-container .container {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden-nav {
+  margin-top: -100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #nav-items {
+    display: none;
+  }
+
+  #nav-container {
+    position: relative;
+  }
+}

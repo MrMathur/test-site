@@ -1,0 +1,17 @@
+#play {
+  padding-top: 100px;
+}
+
+.play-projects {
+  margin-top: 30px;
+}
+
+.play-projects img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  #play {
+    display: none;
+  }
+}
