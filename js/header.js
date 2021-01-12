@@ -49,6 +49,7 @@ $(document).ready(() => {
     slidesToShow: 1,
     arrows: false,
     pauseOnHover: false,
-    speed: 0
+    speed: 0,
+    swipe: false
   });
 });

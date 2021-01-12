@@ -2,16 +2,24 @@
   padding-top: 100px;
 }
 
-.play-projects {
+#play .play-projects {
   margin-top: 30px;
 }
 
-.play-projects img {
+#play .play-projects img {
   width: 100%;
 }
 
-@media only screen and (max-width: 800px) {
-  #play {
-    display: none;
-  }
+#play h2 {
+
+  font-family: Bai Jamjuree;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: 0.05em;
+
+  color: #454545;
+
+  opacity: 0.85;
+
 }

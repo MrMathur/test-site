@@ -31,53 +31,6 @@
   padding-top: 210px;
 }
 
-#header #buttons {
-  margin-top: 50px;
-}
-
-#header #buttons a {
-
-  background: #FFFFFF;
-  border: 1px solid #B22727;
-  box-sizing: border-box;
-
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  margin-right: 20px;
-
-  font-family: 'Fira Mono', monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1em;
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  color: #C90708;
-  box-shadow: 4px 4px 0px #C90708;
-
-}
-
-#header #buttons a:hover {
-  background: #EEF3F5;
-  text-decoration: none;
-}
-
-#header #buttons a:focus {
-  background: #C90708;
-  color: white;
-
-  outline-style: none;
-  box-shadow: none;
-  border-color: transparent;
-
-  transform: translateX(4px) translateY(4px);
-
-  text-decoration: none;
-}
-
 #header #tv {
 
   padding-top: 15px;
@@ -144,6 +97,10 @@
 
 #header .mob-element {
   display: none;
+}
+
+#header .buttons {
+  margin-top: 50px;
 }
 
 @keyframes animate {

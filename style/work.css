@@ -2,6 +2,10 @@
   padding-top: 150px;
 }
 
+#work .buttons {
+  margin-top: 25px;
+}
+
 #work #filter {
   float: right;
 }
@@ -73,50 +77,6 @@
 
 #work .tags span {
   margin-right: 16px;
-}
-
-#work #buttons {
-  margin-top: 50px;
-}
-
-#work #buttons button {
-
-  background: #FFFFFF;
-  border: 1px solid #B22727;
-  box-sizing: border-box;
-
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  margin-right: 20px;
-
-  font-family: 'Fira Mono', monospace;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1em;
-  text-align: center;
-  letter-spacing: 0.04em;
-
-  color: #C90708;
-  box-shadow: 4px 4px 0px #C90708;
-
-}
-
-#work #buttons button:hover {
-  background: #EEF3F5;
-}
-
-#work #buttons button:focus {
-  background: #C90708;
-  color: white;
-
-  outline-style: none;
-  box-shadow: none;
-  border-color: transparent;
-
-  transform: translateX(4px) translateY(4px);
 }
 
 #work .mob-img {
