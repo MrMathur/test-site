@@ -1,0 +1,182 @@
+#header {
+  padding-top: 160px;
+}
+
+#header .project-title {
+
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.56em;
+  line-height: 100%;
+  /* or 36px */
+  letter-spacing: 0.05em;
+
+  color: #454545;
+
+  opacity: 0.85;
+
+}
+
+#header .tags {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+#header .tags span {
+  font-family: 'Fira Mono', monospace;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+  opacity: 0.5;
+
+  margin-right: 16px;
+}
+
+#header #details {
+  margin-top: 30px;
+}
+
+#header .header-image img {
+  width: 100%;
+}
+
+.floor-fade {
+  height: 50px;
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(225, 225, 225, 0.5) 0%, rgba(224, 224, 224, 0) 100%);
+  opacity: 0.5;
+}
+
+.section {
+  padding-top: 100px;
+}
+
+.section .title-row {
+  margin-bottom: 50px !important;
+}
+
+.section ol {
+  list-style: none;
+  margin-top: 50px;
+  counter-reset: custom;
+}
+
+.section ol li {
+
+  font-family: Fira Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.75em;
+
+  color: #454545;
+
+  margin-bottom: 0.75em;
+
+  counter-increment: custom;
+
+  margin-bottom: 20px;
+}
+
+.section ol li span {
+  margin-left: 12px;
+}
+
+.section ol li::before {
+  content: counter(custom);
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  background: #FFFFFF;
+  border: 1px solid #C90708;
+  box-sizing: border-box;
+  box-shadow: 4px 4px 0px #C90708;
+
+  margin-left: -47px;
+
+}
+
+.section ol li b {
+  font-weight: normal;
+  color: #C90708;
+}
+
+.section img {
+  width: 100%;
+}
+
+#aqua-tank {
+  transform: translateY(-50px);
+}
+
+.section .image-caption {
+
+  font-family: Fira Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.timeline p {
+
+  margin-top: 70px;
+}
+
+.timeline img {
+  margin-top: 20px;
+}
+
+
+.four-row {
+  margin-top: 30px;
+}
+
+.four-row h2 {
+
+  font-family: Bai Jamjuree;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6em;
+  line-height: 1em;
+  /* or 22px */
+  letter-spacing: 0.05em;
+
+  color: #454545;
+
+  opacity: 0.85;
+
+}
+
+.photo-maze {
+  margin-top: 50px;
+}
+
+.photo-maze .row {
+  margin-bottom: 30px;
+}
+
+#b1 {
+  transform: translateY(-100px);
+
+
+
+  box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+}

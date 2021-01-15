@@ -24,6 +24,10 @@
   text-decoration: none;
 }
 
+#navbar #back {
+  margin-left: 0px;
+}
+
 #navbar #logo #mathur {
   color: #454545;
 }
