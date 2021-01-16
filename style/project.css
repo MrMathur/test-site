@@ -170,13 +170,8 @@
   margin-bottom: 30px;
 }
 
-#b1 {
-  transform: translateY(-100px);
-
-
-
+.b1 {
   box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-
 }

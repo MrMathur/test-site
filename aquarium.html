@@ -11,6 +11,13 @@
     integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
     crossorigin="anonymous"></script>
 
+    <!-- LAZY LOADING -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>  
+    <script src="./js/lazy.js"></script>
+
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -29,7 +36,6 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/header.js"></script>
   <script src="./js/about-slide.js"></script>
-
 
   <!-- CSS -->
   <link rel="stylesheet" href="./style/main.css">
@@ -84,7 +90,7 @@
         <div class="col-lg-1">
         </div>
         <div class="col-lg-6 header-image">
-          <img src="./images/aquarium/header.png" />
+          <img class="lazy" data-src="./images/aquarium/header.png" />
         </div>
       </div>
     </div>
@@ -117,7 +123,7 @@
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-6">
-          <img src="./images/aquarium/stakeholder_meeting.png" />
+          <img class="lazy" data-src="./images/aquarium/stakeholder_meeting.png" />
           <p class="image-caption">Recreating that child like curiousity to learn about these sharks through technology
           </p>
         </div>
@@ -134,7 +140,7 @@
       <div class="row timeline">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">
-          <img src="./images/aquarium/timeline.png" />
+          <img class="lazy" data-src="./images/aquarium/timeline.png" />
         </div>
         <div class="col-lg-1"></div>
       </div>
@@ -157,12 +163,12 @@
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-5">
-          <img id="aqua-tank" src="./images/aquarium/tank.png" />
+          <img id="aqua-tank" class="lazy" data-src="./images/aquarium/tank.png" />
         </div>
       </div>
       <div class="row four-row">
         <div class="col-lg-3">
-          <img src="./images/aquarium/observation.png" />
+          <img class="lazy" data-src="./images/aquarium/observation.png" />
           <br />
           <h2>Field <br /> Observations</h2>
           <p>Spent time silently observing the users from a distance, and taking notes.
@@ -171,7 +177,7 @@
           </p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/survey.png" />
+          <img class="lazy" data-src="./images/aquarium/survey.png" />
           <br />
           <h2>Online <br /> Surveys</h2>
           <p>We designed a survey on qualtrics informed by our observations.
@@ -179,7 +185,7 @@
             Received a total of 202 responses.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/interview.png" />
+          <img class="lazy" data-src="./images/aquarium/interview.png" />
           <br />
           <h2>Semi-structored <br /> Interviews</h2>
           <p>Identified themes informed by the observations and survey results.
@@ -187,7 +193,7 @@
             Asked follow up questions to explore interesting avenues.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/dataelic.png" />
+          <img class="lazy" data-src="./images/aquarium/dataelic.png" />
           <br />
           <h2>Data-Elicitation <br /> Methods
           </h2>
@@ -222,17 +228,17 @@
         <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-10">
-            <img src="./images/aquarium/affmap.png" />
+            <img class="lazy" data-src="./images/aquarium/affmap.png" />
           </div>
           <div class="col-lg-1"></div>
         </div>
         <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-5">
-            <img src="./images/aquarium/sketchandmap.png" />
+            <img class="lazy" data-src="./images/aquarium/sketchandmap.png" />
           </div>
           <div class="col-lg-5">
-            <img src="./images/aquarium/tagcloud.png" />
+            <img class="lazy" data-src="./images/aquarium/tagcloud.png" />
           </div>
           <div class="col-lg-1"></div>
         </div>
@@ -252,7 +258,7 @@
       </div>
       <div class="row four-row">
         <div class="col-lg-3">
-          <img src="./images/aquarium/di1.png" />
+          <img class="lazy" data-src="./images/aquarium/di1.png" />
           <br /><br />
           <p><b>Finding:</b> Most visitors to the aquarium travel in families, or groups of friends.
           </p>
@@ -261,7 +267,7 @@
           </p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/di2.png" />
+          <img class="lazy" data-src="./images/aquarium/di2.png" />
           <br /><br />
           <p><b>Finding:</b> Current information mechanisms are ineffective.
           </p>
@@ -270,7 +276,7 @@
           </p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/di3.png" />
+          <img class="lazy" data-src="./images/aquarium/di3.png" />
           <br /><br />
           <p><b>Finding:</b> Parents compromise their own experience for their children to enjoy.
           </p>
@@ -279,7 +285,7 @@
           </p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/di4.png" />
+          <img class="lazy" data-src="./images/aquarium/di4.png" />
           <br /><br />
           <p><b>Finding:</b> Anthropomorphism of marine animals helps with retention.
           </p>
@@ -302,7 +308,7 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10" style="margin-top: 50px;">
-          <img src="./images/aquarium/persona.png" />
+          <img class="lazy" data-src="./images/aquarium/persona.png" />
           <br /><br />
           <p class="image-caption">Designing for the Richards Family</p>
         </div>
@@ -325,7 +331,7 @@
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-5">
-          <img id="b1" src="./images/aquarium/b1.png" />
+          <img style="margin-top: -100px;" class="b1 lazy" data-src="./images/aquarium/b1.png" />
         </div>
       </div>
       <div class="row">
@@ -340,7 +346,7 @@
       </div>
       <div class="row four-row">
         <div class="col-lg-3">
-          <img src="./images/aquarium/1idea.png" />
+          <img class="lazy" data-src="./images/aquarium/1idea.png" />
           <br />
           <h2>Mobile Based <br /> Pokedex</h2>
           <p>Through a mobile app, you can scan a shark at the aquarium, and find out about the rescue story of that
@@ -348,21 +354,21 @@
           </p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/2idea.png" />
+          <img class="lazy" data-src="./images/aquarium/2idea.png" />
           <br />
           <h2>Interactive <br /> Screen</h2>
           <p>A touch based interface, where you can interact with digital representations of the sharks, to get
             information about them.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/3idea.png" />
+          <img class="lazy" data-src="./images/aquarium/3idea.png" />
           <br />
           <h2>Shark's Point <br /> of View</h2>
           <p>You can view the point of view of a shark through your mobile screen, and identify whether different
             objects are food or not.</p>
         </div>
         <div class="col-lg-3">
-          <img src="./images/aquarium/4idea.png" />
+          <img class="lazy" data-src="./images/aquarium/4idea.png" />
           <br />
           <h2>Visualizing Ocean <br /> Without Sharks
           </h2>
@@ -386,7 +392,7 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10" style="margin-top: 50px;">
-          <img src="./images/aquarium/stakeholder_feedback.png" />
+          <img class="lazy" data-src="./images/aquarium/stakeholder_feedback.png" />
           <br /><br />
           <p class="image-caption">Gathering Feedback from Stakeholders</p>
         </div>
@@ -409,7 +415,7 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">
-          <img style="margin-top: 50px;" src="./images/aquarium/flow.png" />
+          <img style="margin-top: 50px;" class="lazy" data-src="./images/aquarium/flow.png" />
         </div>
         <div class="col-lg-1"></div>
       </div>
@@ -442,7 +448,7 @@
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-5">
-          <img src="./images/aquarium/poster.png" />
+          <img class="lazy" data-src="./images/aquarium/poster.png" />
           <br />
           <br />
           <p class="image-caption">Poster Layout Wireframe</p>
@@ -450,13 +456,13 @@
       </div>
       <div class="row" style="margin-top: 50px;">
         <div class="col-lg-7">
-          <img src="./images/aquarium/wireframe.png" />
+          <img class="lazy" data-src="./images/aquarium/wireframe.png" />
           <br />
           <br />
           <p class="image-caption">Flow for Mobile Wireframes</p>
         </div>
         <div class="col-lg-5">
-          <img src="./images/aquarium/paper-proto.png" />
+          <img class="lazy" data-src="./images/aquarium/paper-proto.png" />
           <br />
           <br />
           <p class="image-caption">Paper Prototype for Screen-based Interface</p>
@@ -475,7 +481,7 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10" style="margin-top: 50px;">
-          <img src="./images/aquarium/feedback-user.png" />
+          <img class="lazy" data-src="./images/aquarium/feedback-user.png" />
           <br /><br />
           <p class="image-caption">Gathering Feedback from Target Users</p>
         </div>
@@ -514,7 +520,7 @@
       </div>
       <div class="row">
         <div class="col-lg-12" style="margin-top: 50px;">
-          <img src="./images/aquarium/hifi.png" />
+          <img class="lazy" data-src="./images/aquarium/hifi.png" />
         </div>
       </div>
       <div class="row" style="margin-top: 100px;">
@@ -530,7 +536,7 @@
       <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">
-          <img src="./images/aquarium/fdp1.png" />
+          <img class="lazy" data-src="./images/aquarium/fdp1.png" />
           <br /><br />
           <p class="image-caption">Changes from Feedback Session</p>
         </div>
@@ -564,7 +570,7 @@
       </div>
       <div class="row" style="margin-top: 100px;">
         <div class="col-lg-5" style="margin-top: -50px;">
-          <img src="./images/aquarium/fds2.webp" />
+          <img class="lazy" data-src="./images/aquarium/fds2.webp" />
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-5">
@@ -647,17 +653,17 @@
         <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-10">
-            <img src="./images/aquarium/1test.png" />
+            <img class="lazy" data-src="./images/aquarium/1test.png" />
           </div>
           <div class="col-lg-1"></div>
         </div>
         <div class="row">
           <div class="col-lg-1"></div>
           <div class="col-lg-5">
-            <img src="./images/aquarium/3test.png" />
+            <img class="lazy" data-src="./images/aquarium/3test.png" />
           </div>
           <div class="col-lg-5">
-            <img src="./images/aquarium/2test.png" />
+            <img class="lazy" data-src="./images/aquarium/2test.png" />
           </div>
           <div class="col-lg-1"></div>
         </div>
@@ -674,7 +680,7 @@
       </div>
       <div class="row" style="margin-top: 100px;">
         <div class="col-lg-6">
-          <img src="./images/aquarium/tr1.png" />
+          <img class="lazy" data-src="./images/aquarium/tr1.png" />
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-4">
@@ -693,7 +699,7 @@
         </div>
         <div class="col-lg-1"></div>
         <div class="col-lg-6">
-          <img src="./images/aquarium/tr2.png" />
+          <img class="lazy" data-src="./images/aquarium/tr2.png" />
         </div>
         <div class="col-lg-1"></div>
       </div>
@@ -740,7 +746,7 @@
         </div>
         <div class="col-lg-2"></div>
         <div class="col-lg-5">
-          <img src="./images/aquarium/ll1.jpg" />
+          <img class="lazy b1" data-src="./images/aquarium/ll1.jpg" />
           <br /><br />
           <p class="image-caption">Reach out to learn more!</p>
         </div>
